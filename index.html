@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="taskInputForm">
+        <form id="taskForm">
+            <label for="taskName">Task name:</label><br>
+            <input type="text" id="taskName" name="taskName" required><br>
+            <label for="taskDuration">Task duration (minutes):</label><br>
+            <input type="number" id="taskDuration" name="taskDuration" required><br>
+            <label for="taskBreak">Break duration after this task (minutes):</label><br>
+            <input type="number" id="taskBreak" name="taskBreak" required><br>
+            <input type="submit" value="Add Task" class="add-task">
+        </form>
+    </div>
+    <div id="taskList">
+        <!-- Entered tasks will be displayed here -->
+    </div>
+    <div class="task-canvas">
+        <button id="clearTasksButton">Clear Tasks</button>
+        <button id="startNowButton">Start Now</button>
+    </div>
+    <div id="scheduleDisplay">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

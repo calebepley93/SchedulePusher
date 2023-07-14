@@ -1,0 +1,30 @@
+IDEA
+
+An app that allows people to make a schedule for the day and click a button to begin it when they choose
+The use case is for people who like to wake up without alarm clocks
+Example: 
+
+- I know I'd like to work for 6 hours tomorrow and go to the gym
+- I would like to break my work into blocks of 1.5 hrs with 30 min breaks in between
+- I'd like to go the gym around 3 pm. 
+- I press the "push schedule" button and my tasks are automatically populated on a schedule 
+
+* the schedule will have an interface similar to Apple's daily calendar view
+* there will be a page that shows the calendar (1)
+* there will be a page that allows users to enter (0):
+    - Task 1
+    - task name
+    - task duration (read in terms of minutes)
+    - how long will your break after this task be?
+
+
+    -Task 2, etc., etc., etc. 
+
+    Up to 10 
+
+* there will be a "start now" button 
+    - this button will read the user's current time and populate the calendar with their tasks based on the moment they entered 
+
+
+    
+

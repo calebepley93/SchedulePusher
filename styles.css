@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(37, 39, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+#scheduleDisplay {
+    padding: 40px;
+    background-color: skyblue;
+    max-width: 400px;
+    width: 100%;
+}
+
+#clearTasksButton {
+    background-color: steelblue;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    margin-bottom: 20px;
+    width: 45%;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+#startNowButton {
+    background-color: steelblue;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    margin-bottom: 20px;
+    width: 45%;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-left: 3%;
+}
+
+#clearTasksButton:hover, #startNowButton:hover {
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+#taskInputForm {
+    background-color: skyblue;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.task-canvas {
+    background-color: steelblue;
+    width: 100%;
+    padding: 40px;
+    max-width: 400px;
+}
+
+#taskForm label {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#taskForm input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    max-width: 400px;
+}
+
+#taskForm input[type="submit"] {
+    margin-top: 20px;
+    width: 200px;
+    background-color: steelblue;
+    border-radius: 5px;
+    border: 1px solid rgb(102, 131, 155);
+    color: #fff;
+    transition: .3s;
+}
+
+#taskForm input[type="submit"]:hover {
+    background-color: rgb(102, 131, 155);
+    cursor: pointer;
+}
+
+#taskList {
+    padding: 40px;
+    max-width: 400px;
+    background-color: skyblue;
+    width: 100%;
+}
+
+.task-item {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+    max-width: 400px;
+}
+
+.task-item .task-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.task-item .task-duration,
+.task-item .task-break {
+    font-size: 16px;
+    color: #666;
+}
+
+.delete-button {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    background-color: transparent;
+    color: #e24949;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    float: right;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    transition: .3s;
+    font-size: 30px;
+}
+
+.task-name {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.task-duration {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.task-break {
+    margin-bottom: 10px;
+}
+
+.schedule-item {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.schedule-item .schedule-task-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.schedule-item .schedule-task-start,
+.schedule-item .schedule-task-end {
+    font-size: 16px;
+    color: #666;
+}
